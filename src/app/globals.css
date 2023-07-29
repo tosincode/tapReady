@@ -8,13 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +24,141 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.payment-feature {
+  background-image: linear-gradient(
+    35deg,
+    hsl(0deg 0% 9%) 0%,
+    hsl(0deg 0% 9%) 2%,
+    hsl(0deg 0% 9%) 4%,
+    hsl(0deg 0% 9%) 7%,
+    hsl(0deg 0% 9%) 10%,
+    hsl(0deg 0% 9%) 14%,
+    hsl(0deg 0% 9%) 18%,
+    hsl(0deg 0% 9%) 24%,
+    hsl(0deg 0% 9%) 32%,
+    hsl(0deg 0% 9%) 43%,
+    hsl(0deg 0% 9%) 59%,
+    hsl(0deg 0% 9%) 100%
+  );
+  @apply py-20;
+}
+
+.app-feature {
+  background-image: linear-gradient(
+    120deg,
+    hsl(0deg 0% 9%) 0%,
+    hsl(108deg 5% 9%) 14%,
+    hsl(107deg 8% 10%) 24%,
+    hsl(107deg 11% 10%) 32%,
+    hsl(107deg 14% 11%) 40%,
+    hsl(107deg 16% 11%) 46%,
+    hsl(107deg 14% 11%) 52%,
+    hsl(107deg 11% 10%) 58%,
+    hsl(107deg 8% 10%) 63%,
+    hsl(108deg 5% 9%) 68%,
+    hsl(0deg 0% 9%) 73%,
+    hsl(0deg 0% 9%) 78%,
+    hsl(0deg 0% 9%) 83%,
+    hsl(0deg 0% 9%) 88%,
+    hsl(0deg 0% 9%) 94%,
+    hsl(0deg 0% 9%) 100%
+  );
+  @apply py-20;
+}
+
+.feedback {
+  background-image: linear-gradient(
+    115deg,
+    hsl(210deg 8% 15%) 0%,
+    hsl(191deg 7% 15%) 13%,
+    hsl(170deg 8% 14%) 24%,
+    hsl(157deg 10% 15%) 33%,
+    hsl(148deg 12% 15%) 40%,
+    hsl(142deg 15% 15%) 46%,
+    hsl(141deg 12% 15%) 51%,
+    hsl(141deg 9% 14%) 56%,
+    hsl(140deg 6% 14%) 60%,
+    hsl(140deg 3% 14%) 64%,
+    hsl(0deg 0% 14%) 68%,
+    hsl(137deg 0% 14%) 73%,
+    hsl(137deg 0% 13%) 77%,
+    hsl(137deg 0% 13%) 83%,
+    hsl(137deg 0% 13%) 90%,
+    hsl(0deg 0% 13%) 100%
+  );
+  @apply py-20;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.hero {
+  background-image: linear-gradient(
+    to right top,
+    #204e33,
+    #04443c,
+    #03383d,
+    #132c36,
+    #1a2129,
+    #191e28,
+    #181b26,
+    #191724,
+    #1b182f,
+    #1c1a3b,
+    #1d1b47,
+    #1d1c53
+  );
+  /* opacity: .5; */
+}
+
+.text-gradient {
+  color: #372d6d;
+  background-image: -webkit-linear-gradient(172deg, #05ff69 0%, #2020ee 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.tran {
+  transition: all 0.5s;
+}
+
+.product-summary {
+  background-image: linear-gradient(
+    120deg,
+    hsl(231deg 19% 14%) 0%,
+    hsl(231deg 19% 14%) 16%,
+    hsl(232deg 18% 13%) 27%,
+    hsl(232deg 18% 13%) 36%,
+    hsl(232deg 17% 12%) 44%,
+    hsl(232deg 16% 12%) 51%,
+    hsl(232deg 16% 12%) 57%,
+    hsl(232deg 15% 11%) 63%,
+    hsl(232deg 13% 11%) 69%,
+    hsl(232deg 12% 10%) 75%,
+    hsl(232deg 10% 9%) 81%,
+    hsl(232deg 8% 9%) 87%,
+    hsl(233deg 4% 8%) 93%,
+    hsl(0deg 0% 7%) 100%
+  );
+  @apply py-20;
+}
+
+@layer utilities {
+  .feature-card {
+    @apply w-[370px] cursor-pointer text-white relative p-8 rounded-xl tran ease-in-out pt-12 max-md:w-[320px];
+  }
+
+  .circle {
+    @apply relative;
+  }
+
+  .card {
+    @apply relative bg-white/10 z-10 backdrop-filter backdrop-blur-[20px] shadow-lg rounded-2xl;
+  }
 }
