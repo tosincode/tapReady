@@ -9,7 +9,7 @@ const PaymentsFeatures = () => {
         <div className="flex flex-col items-center justify-center">
           <SvgIcon iconName="paymentIcon" />
           <p className="font-bold text-center text-4xl mt-20 mb-5 ">
-            What makes Tapstride payment solution.
+            What makes TapReady payment solution.
           </p>
           <SvgIcon iconName="payment" />
         </div>
