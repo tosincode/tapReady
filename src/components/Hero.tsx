@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="bg-black w-screen relative h-screen overflow-hidden">
       <div className="absolute text-white w-screen z-[99999999] ">
         <Nav />
-        <p className="text-6xl max-md:text-xl text-center mt-10 ">
+        <p className="text-6xl max-md:text-xl text-center mt-10 2xl:mt-80 max-md:mt-40 ">
           Accept Contactless payment <br />
           on NFC-enabled{" "}
           <span className="font-semibold text-gradient">devices</span>
