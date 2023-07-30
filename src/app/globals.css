@@ -97,8 +97,8 @@ body {
 }
 
 .grid {
-  background-image: linear-gradient(#282828 .5px, transparent .5px),
-    linear-gradient(90deg, #282828 .5px, transparent .5px);
+  background-image: linear-gradient(#282828 0.5px, transparent 0.5px),
+    linear-gradient(90deg, #282828 0.5px, transparent 0.5px);
   background-size: 5rem 5rem;
 }
 
@@ -181,3 +181,12 @@ body {
     @apply relative bg-white/10 z-10 backdrop-filter backdrop-blur-[20px] shadow-lg rounded-2xl;
   }
 }
+
+.eclipseLarge {
+  @apply absolute right-[50%] translate-x-[50%] bottom-0 -mb-48 md:-mb-52 lg:-mb-72;
+}
+
+.iphone {
+  @apply right-[50%] translate-x-[50%] -mb-80 max-sm:-mb-20;
+}
+/* xl:-bottom-[20vh]   */

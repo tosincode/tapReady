@@ -1,40 +1,45 @@
+"use client";
+import { useWindowSize } from "usehooks-ts";
 import React from "react";
 import SvgIcon from "./SvgIcon/SvgIcon";
-import SvgBg from "./SvgBg";
 import Nav from "./Nav";
 
 const Hero = () => {
+  const { width } = useWindowSize();
+
+  const isMobile = width < 978;
+
   return (
     <div className="bg-black w-screen relative h-screen overflow-hidden">
-      <div className="absolute text-white w-screen ">
+      <div className="absolute text-white w-screen z-[99999999] ">
         <Nav />
 
-        <p className="text-6xl max-md:text-xl text-center mt-20 ">
+        <p className="text-6xl max-md:text-xl text-center mt-10 ">
           Accept Contactless payment <br />
           on NFC-enabled{" "}
           <span className="font-semibold text-gradient">devices</span>
         </p>
-
-        <div className="mt-16 relative  z-[99999999999999]">
-          {/* <div className="absolute right-[29%] z-[999] max-md:right-[20%] top-7 ">
+      </div>
+      <div className="absolute bottom-0 iphone z-[99999999]">
+        <div className=" ">
+          <div className="absolute lg:scale-[1.5]  z-[999] top-7 ">
             <SvgIcon iconName="contactlessglass" />
           </div>
-          <div className="absolute right-[25%] max-md:right-[15%] top-40">
-            <SvgIcon iconName="card" />
+          <div className={`absolute ${isMobile ? "-right-16 top-24" : "-right-52 top-40"} `}>
+            <SvgIcon iconName="card" width={isMobile ? 150 : undefined} />
           </div>
-          <div className="absolute right-[58%] max-md:right-[45%] top-[190px]">
-            <SvgIcon iconName="androidGlass" />
+          <div className={`absolute ${isMobile ? "top-[90px] -left-20" : "top-[190px] -left-28"}`}>
+            <SvgIcon iconName="androidGlass" width={isMobile ? 140 : undefined} />
           </div>
-          <div className="absolute right-[58%] max-md:right-[45%] max-md:top-[250px] top-[300px]">
-            <SvgIcon iconName="iosGlass" /> absolute right-[50%] translate-x-[50%] top-[50%]  
-          </div> */}
-          <div className="absolute right-[50%] translate-x-[50%]  ">
-            <SvgIcon iconName="iphone" />
+          <div className={`absolute ${isMobile ? "top-[150px] -left-20" : "top-[300px] -left-28"}`}>
+            <SvgIcon iconName="iosGlass" width={isMobile ? 140 : undefined} />
           </div>
+          <SvgIcon iconName="iphone" width={isMobile ? 400 : undefined} />
         </div>
       </div>
-      <div className="hero h-screen z-[99999]">
-        <div className="absolute right-[50%] translate-x-[50%] top-[50%]">
+      <div className="absolute grid h-screen w-screen z-[999]"></div>
+      <div className="hero h-screen z-[99]">
+        <div className=" eclipseLarge ">
           <SvgIcon iconName="eclipseLarge" />
         </div>
       </div>
@@ -43,4 +48,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 // contactlessglass

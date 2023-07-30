@@ -8,10 +8,10 @@ const Nav = () => {
         <div className="order-1 " >
           <SvgIcon iconName="logo" />
         </div>
-        <ul className="flex items-center ml-20 order-2 max-md:ml-auto ">
+        {/* <ul className="flex items-center ml-20 order-2 max-md:ml-auto ">
           <li className="text-[#F5F5F7] mr-5 text-base max-md:text-sm font-light">Features</li>
           <li className="text-[#F5F5F7] text-base max-md:text-sm font-light">FAQs</li>
-        </ul>
+        </ul> */}
         <div className="ml-auto flex items-center order-3 max-md:mt-4">
           <button className="px-4 py-1 border-2 border-[#05FF69] rounded-md text-sm bg-black">
             Support
