@@ -183,7 +183,7 @@ body {
 }
 
 .eclipseLarge {
-  @apply absolute right-[50%] translate-x-[50%] bottom-0 -mb-48 md:-mb-52 lg:-mb-72;
+  @apply absolute right-[50%] translate-x-[50%] bottom-0 -mb-48 max-sm:-mb-10 md:-mb-52 lg:-mb-72;
 }
 
 .iphone {
