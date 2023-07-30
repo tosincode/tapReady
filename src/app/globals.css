@@ -96,8 +96,27 @@ body {
   backdrop-filter: blur(5px);
 }
 
+.grid {
+  background-image: linear-gradient(#282828 .5px, transparent .5px),
+    linear-gradient(90deg, #282828 .5px, transparent .5px);
+  background-size: 5rem 5rem;
+}
+
 .hero {
   background-image: linear-gradient(
+    to right top,
+    #1c6d3c,
+    #0c4824,
+    #272525,
+    #151515,
+    #151515,
+    #151515,
+    #151515,
+    #151515,
+    #232279,
+    #252392
+  );
+  /* background-image: linear-gradient(
     to right top,
     #204e33,
     #04443c,
@@ -111,7 +130,7 @@ body {
     #1c1a3b,
     #1d1b47,
     #1d1c53
-  );
+  ); */
   /* opacity: .5; */
 }
 

@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 const Hero = () => {
   return (
-    <div className="bg-black w-screen relative h-[120vh] overflow-hidden">
+    <div className="bg-black w-screen relative h-screen overflow-hidden">
       <div className="absolute text-white w-screen ">
         <Nav />
 
@@ -15,26 +15,28 @@ const Hero = () => {
           <span className="font-semibold text-gradient">devices</span>
         </p>
 
-        <div className="mt-16 relative">
-          <div className="absolute right-[30%]  max-md:right-[20%] top-7 ">
+        <div className="mt-16 relative  z-[99999999999999]">
+          {/* <div className="absolute right-[29%] z-[999] max-md:right-[20%] top-7 ">
             <SvgIcon iconName="contactlessglass" />
           </div>
-          <div className="absolute right-[25%] max-md:right-[15%] top-44">
+          <div className="absolute right-[25%] max-md:right-[15%] top-40">
             <SvgIcon iconName="card" />
           </div>
           <div className="absolute right-[58%] max-md:right-[45%] top-[190px]">
             <SvgIcon iconName="androidGlass" />
           </div>
-          <div className="absolute right-[58%] max-md:right-[45%] max-md:top-[280px] top-[360px]">
-            <SvgIcon iconName="iosGlass" />
-          </div>
-          <div className="absolute right-[37%] max-md:right-[20%] max-sm:right-[6%]">
+          <div className="absolute right-[58%] max-md:right-[45%] max-md:top-[250px] top-[300px]">
+            <SvgIcon iconName="iosGlass" /> absolute right-[50%] translate-x-[50%] top-[50%]  
+          </div> */}
+          <div className="absolute right-[50%] translate-x-[50%]  ">
             <SvgIcon iconName="iphone" />
           </div>
         </div>
       </div>
-      <div className="hero z-20  h-[120vh]">
-        <SvgBg />
+      <div className="hero h-screen z-[99999]">
+        <div className="absolute right-[50%] translate-x-[50%] top-[50%]">
+          <SvgIcon iconName="eclipseLarge" />
+        </div>
       </div>
     </div>
   );
