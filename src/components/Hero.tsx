@@ -3,11 +3,9 @@ import { useWindowSize } from "usehooks-ts";
 import React from "react";
 import SvgIcon from "./SvgIcon/SvgIcon";
 import Nav from "./Nav";
-import useScreenOrientation from "react-hook-screen-orientation";
 
 const Hero = () => {
   const { width, height } = useWindowSize();
-  const screenOrientation = useScreenOrientation();
 
   const isMobile = width < 978;
   const sm = width < 500;
@@ -24,7 +22,7 @@ const Hero = () => {
       </div>
       <div
         className={`absolute bottom-0 iphone z-[99999999] ${
-          screenOrientation === "landscape-primary" && sm ? "hidden" : ""
+          width > height && sm ? "hidden" : ""
         } `}
       >
         <div className=" ">
