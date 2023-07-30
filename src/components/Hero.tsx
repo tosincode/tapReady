@@ -26,18 +26,18 @@ const Hero = () => {
         } `}
       >
         <div className=" ">
-          <div className="absolute lg:scale-[1.5]  z-[999] top-7 ">
+          <div className="absolute lg:scale-[1.5] z-[999] top-7 ">
             <SvgIcon iconName="contactlessglass" />
           </div>
           <div
-            className={`absolute ${
+            className={`absolute hero-transition ease-in-out ${
               isMobile ? "-right-16 top-24" : "-right-52 top-40"
             } `}
           >
             <SvgIcon iconName="card" width={isMobile ? 150 : undefined} />
           </div>
           <div
-            className={`absolute ${
+            className={`absolute hero-transition ease-in-out ${
               isMobile ? "top-[90px] -left-20" : "top-[190px] -left-28"
             }`}
           >
@@ -47,7 +47,7 @@ const Hero = () => {
             />
           </div>
           <div
-            className={`absolute ${
+            className={`absolute  ease-in-out hero-transition ${
               isMobile ? "top-[150px] -left-20" : "top-[300px] -left-28"
             }`}
           >
@@ -67,5 +67,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// contactlessglass

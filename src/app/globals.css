@@ -147,6 +147,10 @@ body {
   transition: all 0.5s;
 }
 
+.hero-transition {
+  transition: all 0.9s;
+}
+
 .product-summary {
   background-image: linear-gradient(
     120deg,
@@ -187,6 +191,6 @@ body {
 }
 
 .iphone {
-  @apply right-[50%] translate-x-[50%] -mb-80 max-sm:-mb-20;
+  @apply right-[50%] translate-x-[50%] -mb-80 max-sm:-mb-[10vh];
 }
 /* xl:-bottom-[20vh]   */
