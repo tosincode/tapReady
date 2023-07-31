@@ -192,6 +192,6 @@ body {
 }
 
 .iphone {
-  @apply right-[50%] translate-x-[50%] -mb-[45vh] max-sm:-mb-[10vh];
+  @apply right-[50%] translate-x-[50%] -mb-[45vh] max-lg:-mb-[55vh] max-sm:-mb-[10vh];
 }
 /* xl:-bottom-[20vh]   */
