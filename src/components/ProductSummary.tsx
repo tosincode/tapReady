@@ -1,4 +1,5 @@
 import React from "react";
+import SvgIcon from "./SvgIcon/SvgIcon";
 
 const ProductSummary = () => {
   return (
@@ -6,11 +7,11 @@ const ProductSummary = () => {
       <div className="mx-auto container">
         <div className="overflow-x-scroll ">
           <div className="w-[1000px] mx-auto">
-            <h2 className="text-white mx-6 lg:mx-0 text-3xl font-bold mb-4">
+            <h2 className="text-white mx-6 lg:mx-0 text-4xl font-bold mb-4">
               Checkout the <span className="text-[#05FF69]">tapReady</span>{" "}
               <br /> Product Summary
             </h2>
-            <div className="text-white card mx-6 lg:mx-0 border-[0.5px] text-sm border-gray-500 p-20 mb-8 ">
+            <div className="text-white card  rounded-3xl mx-6 lg:mx-0 border-[0.5px] text-sm border-gray-500 p-20 mb-8 ">
               <div className="border-gray-500 card border-[0.5px] rounded-lg flex items-center py-5">
                 <p className="flex-1"></p>
                 <p className="flex-1">Tap to Mobile SDK</p>
@@ -62,15 +63,29 @@ const ProductSummary = () => {
         </div>
         <div className="overflow-x-scroll ">
           <div className="w-[1000px] mx-auto">
-            <div className="text-white card mx-6 lg:mx-0 border-[0.5px] border-gray-500 px-20 py-10 text-sm mb-8 ">
+            <div className="text-white  rounded-3xl card mx-6 lg:mx-0 border-[0.5px] border-gray-500 px-20 py-10 text-sm mb-8 ">
               <div className="flex border-gray-500 border-b-[0.5px]">
                 <p className="border-gray-500 w-1/4 text-sm py-6 px-3 border-r-[0.5px]">
                   Supported Card Schemes
                 </p>
-                <p className="py-6 px-3 flex-1 ">
-                  Mastercard (Version 3.0.2), Visa VCPS (Version 2.2) <br />{" "}
-                  Apple Pay, Google Pay
-                </p>
+                <div className="py-6 px-3 flex-1 flex items-center justify-between ">
+                  <p>
+                    Mastercard (Version 3.0.2), Visa VCPS (Version 2.2) <br />{" "}
+                    Apple Pay, Google Pay
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <div className="mr-2">
+                      <SvgIcon iconName="masterCard" />
+                    </div>
+                    <div className="mr-2">
+                      <SvgIcon iconName="visacard" />
+                    </div>
+                    <div className="mr-2">
+                      <SvgIcon iconName="applepay" />
+                    </div>
+                    <SvgIcon iconName="googlePay" />
+                  </div>
+                </div>
               </div>
               <div className="flex border-gray-500 border-b-[0.5px]">
                 <p className="border-gray-500 w-1/4 text-sm py-6 px-3 border-r-[0.5px]">

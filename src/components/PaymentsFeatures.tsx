@@ -1,6 +1,7 @@
 import SvgIcon from "./SvgIcon/SvgIcon";
 import Image from "next/image";
 import tapReadyImg from "../../public/images/tapready-phone.png";
+import SupportedCards from "./SupportedCards";
 
 const PaymentsFeatures = () => {
   return (
@@ -15,7 +16,7 @@ const PaymentsFeatures = () => {
         </div>
         <div className=" mt-12 flex flex-col items-center lg:flex-row justify-center">
           <div>
-            <div className=" w-[320px] md:w-[450px] pt-10  bg-black overflow-hidden rounded-2xl flex-col items-center flex justify-center">
+            <div className=" w-[300px] md:w-[450px] pt-10  bg-black overflow-hidden rounded-[30px] flex-col items-center flex justify-center">
               <p className="text-2xl font-light">NFC Tap to Pay</p>
               <p className="mb-12 font-bold text-3xl ">Mobile Solution</p>
               <div className="z-[99]">
@@ -26,15 +27,15 @@ const PaymentsFeatures = () => {
               </figure>
             </div>
           </div>
-          <div className="w-[300px] mt-8 lg:mt-0 lg:ml-8  ">
-            <div className="bg-black rounded-2xl flex flex-col items-center">
+          <div className="w-[320px] mt-8 lg:mt-0 lg:ml-8  ">
+            <div className="bg-black rounded-[30px] flex flex-col items-center">
               <div className="pt-10 text-center mb-8">
                 <p className="text-2xl font-light">Supported OS</p>
                 <p className="mb-12 font-bold text-3xl ">Android 6.0+</p>
               </div>
               <SvgIcon iconName="android" />
             </div>
-            <div className="bg-[#05FF69] text-black mt-6 rounded-2xl p-8 flex justify-between pb-16 items-start ">
+            <div className="bg-[#05FF69] text-black mt-6 rounded-[30px] p-8 flex justify-between pb-16 items-start ">
               <div className="w-40 mt-10">
                 <p className="font-semibold text-2xl mb-4">
                   NFC <br />
@@ -47,6 +48,9 @@ const PaymentsFeatures = () => {
               <SvgIcon iconName="nfc" />
             </div>
           </div>
+        </div>
+        <div className="flex items-center justify-center" >
+          <SupportedCards />
         </div>
       </div>
     </div>

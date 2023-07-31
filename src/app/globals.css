@@ -24,6 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
 
 .payment-feature {
@@ -174,7 +175,7 @@ body {
 
 @layer utilities {
   .feature-card {
-    @apply w-[370px] cursor-pointer text-white relative p-8 rounded-xl tran ease-in-out pt-12 max-md:w-[320px];
+    @apply w-[380px] rounded-[30px] cursor-pointer text-white relative py-8 px-14 tran ease-in-out pt-12 max-md:w-[320px] hover:text-black hover:bg-[#05FF69];
   }
 
   .circle {
@@ -182,7 +183,7 @@ body {
   }
 
   .card {
-    @apply relative bg-white/10 z-10 backdrop-filter backdrop-blur-[20px] shadow-lg rounded-2xl;
+    @apply relative bg-white/10 z-10 backdrop-filter backdrop-blur-[20px] shadow-lg;
   }
 }
 
@@ -191,6 +192,6 @@ body {
 }
 
 .iphone {
-  @apply right-[50%] translate-x-[50%] -mb-80 max-sm:-mb-[10vh];
+  @apply right-[50%] translate-x-[50%] -mb-[45vh] max-sm:-mb-[10vh];
 }
 /* xl:-bottom-[20vh]   */
