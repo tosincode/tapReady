@@ -192,7 +192,7 @@ body {
 }
 
 .iphone {
-  @apply right-[50%] translate-x-[50%];
+  @apply right-[50%] translate-x-[50%] bottom-0;
 }
 
 .iphone-sm {
@@ -200,7 +200,7 @@ body {
 }
 
 .iphone-lg {
-  @apply -mb-[70vh]
+  @apply -mb-[80vh]
 }
 
 /* xl:-bottom-[20vh]   */

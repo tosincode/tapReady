@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
       </div>
       <div
-        className={`absolute bottom-0 iphone z-[99999999] ${
+        className={`absolute iphone z-[99999999] ${
           width > height && sm ? "hidden" : ""
         } ${d ? "iphone-lg" : "iphone-sm"} `}
       >
