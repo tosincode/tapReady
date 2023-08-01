@@ -25,7 +25,7 @@ const Hero = () => {
       <div
         className={`absolute bottom-0 iphone z-[99999999] ${
           width > height && sm ? "hidden" : ""
-        } ${d ? "-mb-[70vh]" : ""} `}
+        } ${d ? "iphone-lg" : "iphone-sm"} `}
       >
         <div className=" ">
           <div className="absolute lg:scale-[1.5] z-[999] top-7 ">
