@@ -10,6 +10,8 @@ const Hero = () => {
   const isMobile = width < 978;
   const sm = width < 500;
 
+  const d = height === 600 && width > 1000;
+
   return (
     <div className="bg-black w-screen relative h-screen overflow-hidden">
       <div className="absolute text-white w-screen z-[99999999] ">
@@ -23,7 +25,7 @@ const Hero = () => {
       <div
         className={`absolute bottom-0 iphone z-[99999999] ${
           width > height && sm ? "hidden" : ""
-        } `}
+        } ${d ? "-mb-[70vh]" : ""} `}
       >
         <div className=" ">
           <div className="absolute lg:scale-[1.5] z-[999] top-7 ">
