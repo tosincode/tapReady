@@ -3,7 +3,7 @@ import SvgIcon from "./SvgIcon/SvgIcon";
 
 const SupportedCards = () => {
   return (
-    <div className="bg-black rounded-3xl p-6 lg:p-20 mt-8  lg:w-[800px] flex flex-col lg:flex-row justify-between items-center">
+    <div className="bg-black rounded-3xl mx-4 md:mx-0 p-3 md:p-6 lg:p-20 mt-8  lg:w-[800px] flex flex-col lg:flex-row justify-between items-center">
       <p className="text-white  mb-4 lg:mb:0">
         Supported Card <br className="lg:block hidden" /> Options.
       </p>

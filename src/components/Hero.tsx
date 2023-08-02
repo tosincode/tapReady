@@ -36,22 +36,38 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="lg:col-span-6 max-md:h-screen col-span-12 flex items-center justify-end mr-20 ">
+            <div className="lg:col-span-6 max-md:h-screen col-span-12 flex items-center justify-end hero-transition mr-20 ">
               <div className="relative z-50">
-                <div className={`absolute top-[50%] ${d ? "-left-[30%]" : "-left-[60%] "} -translate-y-[50%]`}>
-                  <SvgIcon iconName="opaqueGlass"  width={d ? 150 : undefined} />
+                <div
+                  className={`absolute top-[50%] hero-transition ${
+                    d ? "-left-[30%]" : "-left-[60%] "
+                  } -translate-y-[50%]`}
+                >
+                  <SvgIcon iconName="opaqueGlass" width={d ? 150 : undefined} />
                 </div>
                 <div className="flex absolute top-[50%] -right-[15%] -translate-y-[50%] flex-col">
                   <div className="mr-2 mb-2">
-                    <SvgIcon iconName="mastercardprocessor" width={d ? 50 : undefined} />
+                    <SvgIcon
+                      iconName="mastercardprocessor"
+                      width={d ? 50 : undefined}
+                    />
                   </div>
-                  <div className="mr-2 mb-2">
-                    <SvgIcon iconName="visaprocessor" width={d ? 50 : undefined} />
+                  <div className="mr-2 mb-2 hero-transition">
+                    <SvgIcon
+                      iconName="visaprocessor"
+                      width={d ? 50 : undefined}
+                    />
                   </div>
-                  <div className="mr-2 mb-2">
-                    <SvgIcon iconName="processorApple" width={d ? 50 : undefined} />
+                  <div className="mr-2 mb-2 hero-transition">
+                    <SvgIcon
+                      iconName="processorApple"
+                      width={d ? 50 : undefined}
+                    />
                   </div>
-                  <SvgIcon iconName="googlepayProcessor" width={d ? 50 : undefined} />
+                  <SvgIcon
+                    iconName="googlepayProcessor"
+                    width={d ? 50 : undefined}
+                  />
                 </div>
                 <SvgIcon iconName="iphoneblack" width={d ? 180 : undefined} />
               </div>

@@ -5,6 +5,11 @@ import Hero from "@/components/Hero";
 import PaymentsFeatures from "@/components/PaymentsFeatures";
 import ProductSummary from "@/components/ProductSummary";
 
+export const metadata = {
+  title: `TapReady`,
+  description: "contactless payments.",
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen">
