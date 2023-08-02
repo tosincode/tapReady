@@ -192,6 +192,31 @@ body {
   @apply py-20;
 }
 
+.customScrollbar {
+  &::-webkit-scrollbar {
+    @apply w-[5px] h-[5px];
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    @apply bg-gray-200;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-50;
+  }
+
+  &::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+  }
+}
+
 @layer utilities {
   .feature-card {
     @apply w-[380px] rounded-[30px] cursor-pointer text-white relative py-8 px-14 tran ease-in-out pt-12 max-md:w-[320px] hover:text-black hover:bg-[#05FF69];

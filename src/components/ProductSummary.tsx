@@ -5,8 +5,8 @@ const ProductSummary = () => {
   return (
     <div className="product-summary">
       <div className="mx-auto container">
-        <div className="overflow-x-scroll ">
-          <div className="w-[1000px] mx-auto">
+        <div className="overflow-x-auto customScrollbar ">
+          <div className="w-[1000px] mx-auto customScrollbar">
             <h2 className="text-white mx-6 lg:mx-0 text-4xl font-bold mb-4">
               Checkout the <span className="text-[#05FF69]">tapReady</span>{" "}
               <br /> Product Summary
@@ -61,8 +61,8 @@ const ProductSummary = () => {
             </div>
           </div>
         </div>
-        <div className="overflow-x-scroll ">
-          <div className="w-[1000px] mx-auto">
+        <div className="overflow-x-auto customScrollbar">
+          <div className="w-[1000px] mx-auto customScrollbar">
             <div className="text-white  rounded-3xl card mx-6 lg:mx-0 border-[0.5px] border-gray-500 px-20 py-10 text-sm mb-8 ">
               <div className="flex border-gray-500 border-b-[0.5px]">
                 <p className="border-gray-500 w-1/4 text-sm py-6 px-3 border-r-[0.5px]">

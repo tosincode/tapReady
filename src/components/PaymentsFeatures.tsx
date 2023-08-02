@@ -16,13 +16,13 @@ const PaymentsFeatures = () => {
         </div>
         <div className=" mt-12 flex flex-col items-center lg:flex-row justify-center">
           <div>
-            <div className=" w-[300px] md:w-[450px] pt-10  bg-black overflow-hidden rounded-[30px] flex-col items-center flex justify-center">
+            <div className=" w-[320px] md:w-[450px] pt-10  bg-black overflow-hidden rounded-[30px] flex-col items-center flex justify-center">
               <p className="text-2xl font-light">NFC Tap to Pay</p>
               <p className="mb-12 font-bold text-3xl ">Mobile Solution</p>
               <div className="z-[99]">
                 <SvgIcon iconName="atmCard" />
               </div>
-              <figure className="relative overflow-hidden -mt-40 h-[453px] w-[391px] ">
+              <figure className="relative overflow-hidden -mt-40 h-[453px] md:w-[391px] w-[310px] ">
                 <Image src={tapReadyImg} alt="Ben " fill placeholder="blur" />
               </figure>
             </div>
