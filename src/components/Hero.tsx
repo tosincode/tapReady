@@ -10,59 +10,59 @@ const Hero = () => {
   const isMobile = width < 978;
   const sm = width < 500;
 
-  const d = height === 600 && width > 1000;
+  const d = width < 1023;
 
   return (
-    <div className="bg-black w-screen relative h-screen overflow-hidden">
-      <div className="absolute text-white w-screen z-[99999999] ">
+    <div className="hero w-screen relative min-h-screen overflow-hidden ">
+      <div className=" text-white w-screen">
         <Nav />
-        <p className="text-6xl max-md:text-xl text-center mt-10 2xl:mt-60 max-md:mt-40 ">
-          Accept Contactless payment <br />
-          on NFC-enabled{" "}
-          <span className="font-semibold text-gradient">devices</span>
-        </p>
-      </div>
-      <div
-        className={`absolute iphone z-[99999999] ${
-          width > height && sm ? "hidden" : ""
-        } ${d ? "iphone-lg" : "iphone-sm"} `}
-      >
-        <div className=" ">
-          <div className="absolute lg:scale-[1.5] z-[999] top-7 ">
-            <SvgIcon iconName="contactlessglass" />
+        <div className="header">
+          <div className="grid grid-cols-12 items-start mt-8 lg:mt-0 lg:content-center min-h-[90vh]">
+            <div className="col-span-12 lg:col-span-6 max-md:mx-8 lg:self-center z-50">
+              <p className="text-6xl max-md:text-xl lg:text-left mt-10 2xl:mt-60 ">
+                Accept <br className="hidden lg:block" />
+                <span className="font-semibold text-gradient">Contactless</span>
+                <br className="hidden lg:block" />{" "}
+                <span className="font-semibold text-gradient">payment</span> on{" "}
+                <br className="hidden lg:block" />
+                NFC-enabled <br className="hidden lg:block" />
+                devices.
+              </p>
+              <div className="flex mt-8 items-center">
+                <SvgIcon iconName="groupIcon" />
+                <p className="text-xs ml-4 ">
+                  Accept contactless payments from your customers’ <br />
+                  bank cards, All banks supported.
+                </p>
+              </div>
+            </div>
+            <div className="lg:col-span-6 max-md:h-screen col-span-12 flex items-center justify-end mr-20 ">
+              <div className="relative z-50">
+                <div className={`absolute top-[50%] ${d ? "-left-[30%]" : "-left-[60%] "} -translate-y-[50%]`}>
+                  <SvgIcon iconName="opaqueGlass"  width={d ? 150 : undefined} />
+                </div>
+                <div className="flex absolute top-[50%] -right-[15%] -translate-y-[50%] flex-col">
+                  <div className="mr-2 mb-2">
+                    <SvgIcon iconName="mastercardprocessor" width={d ? 50 : undefined} />
+                  </div>
+                  <div className="mr-2 mb-2">
+                    <SvgIcon iconName="visaprocessor" width={d ? 50 : undefined} />
+                  </div>
+                  <div className="mr-2 mb-2">
+                    <SvgIcon iconName="processorApple" width={d ? 50 : undefined} />
+                  </div>
+                  <SvgIcon iconName="googlepayProcessor" width={d ? 50 : undefined} />
+                </div>
+                <SvgIcon iconName="iphoneblack" width={d ? 180 : undefined} />
+              </div>
+            </div>
           </div>
-          <div
-            className={`absolute hero-transition ease-in-out ${
-              isMobile ? "-right-16 top-24" : "-right-52 top-40"
-            } `}
-          >
-            <SvgIcon iconName="card" width={isMobile ? 150 : undefined} />
-          </div>
-          <div
-            className={`absolute hero-transition ease-in-out ${
-              isMobile ? "top-[90px] -left-20" : "top-[190px] -left-28"
-            }`}
-          >
-            <SvgIcon
-              iconName="androidGlass"
-              width={isMobile ? 140 : undefined}
-            />
-          </div>
-          <div
-            className={`absolute  ease-in-out hero-transition ${
-              isMobile ? "top-[150px] -left-20" : "top-[300px] -left-28"
-            }`}
-          >
-            <SvgIcon iconName="iosGlass" width={isMobile ? 140 : undefined} />
-          </div>
-          <SvgIcon iconName="iphone" width={isMobile ? 400 : undefined} />
         </div>
       </div>
-      <div className="absolute grid h-screen w-screen z-[999]"></div>
-      <div className="hero h-screen z-[99]">
-        <div className=" eclipseLarge ">
-          <SvgIcon iconName="eclipseLarge" />
-        </div>
+
+      {/* <div className=" relative h-screen z-[99] "></div> */}
+      <div className=" eclipseLarge z-10">
+        <SvgIcon iconName="eclipseLarge" />
       </div>
     </div>
   );

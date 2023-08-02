@@ -5,7 +5,7 @@ import { useWindowSize } from "usehooks-ts";
 const Nav = () => {
   const { width } = useWindowSize();
   return (
-    <div className="container mx-auto max-md:px-4  ">
+    <div className="container mx-auto px-4  ">
       <div className="flex flex-wrap items-center mt-8 ">
         <div className="order-1 ">
           <SvgIcon iconName="logo" width={width < 600 ? 100 : undefined} />

@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/tt-firs-neue-trl");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,10 +98,23 @@ body {
   backdrop-filter: blur(5px);
 }
 
-.grid {
+.grid-lines {
   background-image: linear-gradient(#282828 0.5px, transparent 0.5px),
     linear-gradient(90deg, #282828 0.5px, transparent 0.5px);
   background-size: 5rem 5rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#282828 0.5px, transparent 0.5px),
+    linear-gradient(90deg, #282828 0.5px, transparent 0.5px);
+  background-size: 5rem 5rem;
+  @apply z-10
 }
 
 .hero {
@@ -135,9 +149,14 @@ body {
   /* opacity: .5; */
 }
 
+.header {
+  font-family: "TT Firs Neue Trl", sans-serif;
+  @apply container mx-auto text-xl;
+}
+
 .text-gradient {
   color: #372d6d;
-  background-image: -webkit-linear-gradient(172deg, #05ff69 0%, #2020ee 100%);
+  background-image: -webkit-linear-gradient(172deg, #2020ee 2%, #05ff69 100%);
   background-clip: text;
   -webkit-background-clip: text;
   text-fill-color: transparent;
@@ -188,7 +207,7 @@ body {
 }
 
 .eclipseLarge {
-  @apply absolute right-[50%] translate-x-[50%] bottom-0 -mb-48 max-sm:-mb-10 md:-mb-52 lg:-mb-72;
+  @apply absolute -top-[150px] -right-[100px];
 }
 
 .iphone {
@@ -200,7 +219,7 @@ body {
 }
 
 .iphone-lg {
-  @apply -mb-[80vh]
+  @apply -mb-[80vh];
 }
 
 /* xl:-bottom-[20vh]   */
