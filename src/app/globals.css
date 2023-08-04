@@ -106,7 +106,7 @@ body {
   background-image: linear-gradient(#282828 0.5px, transparent 0.5px),
     linear-gradient(90deg, #282828 0.5px, transparent 0.5px);
   background-size: 5rem 5rem;
-  @apply z-10
+  @apply z-10;
 }
 
 .hero {
@@ -147,8 +147,26 @@ body {
 }
 
 .text-gradient {
-  color: #372d6d;
-  background-image: -webkit-linear-gradient(172deg, #2020ee 2%, #05ff69 100%);
+  background-image: -webkit-linear-gradient(
+    172deg,
+    #2020ee 0.2%,
+    #05ff69,
+    #05ff69,
+    #05ff69,
+    #05ff69
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-2 {
+  background-image: -webkit-linear-gradient(
+    172deg,
+    #2020ee 0.2%,
+    #05ff69
+  );
   background-clip: text;
   -webkit-background-clip: text;
   text-fill-color: transparent;
@@ -224,7 +242,7 @@ body {
 }
 
 .eclipseLarge {
-  @apply absolute -top-[150px] -right-[100px];
+  @apply absolute -top-[150px] -right-[100px] opacity-30;
 }
 
 .iphone {

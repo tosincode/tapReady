@@ -12,7 +12,9 @@ const PaymentsFeatures = () => {
           <p className="font-bold text-center text-4xl mt-20 mb-5 ">
             What makes TapReady payment solution.
           </p>
-          <SvgIcon iconName="payment" />
+          <div className="animate-bounce " >
+            <SvgIcon iconName="payment" />
+          </div>
         </div>
         <div className=" mt-12 flex flex-col items-center lg:flex-row justify-center">
           <div>
@@ -49,7 +51,7 @@ const PaymentsFeatures = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center" >
+        <div className="flex items-center justify-center">
           <SupportedCards />
         </div>
       </div>

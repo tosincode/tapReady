@@ -14,12 +14,12 @@ const Nav = () => {
           <li className="text-[#F5F5F7] mr-5 text-base max-md:text-sm font-light">Features</li>
           <li className="text-[#F5F5F7] text-base max-md:text-sm font-light">FAQs</li>
         </ul> */}
-        <div className="ml-auto flex items-center order-3">
-          <button className="px-4 py-1 border-2 border-[#05FF69] rounded-md text-sm bg-black">
+        <div className="ml-auto flex items-center order-3 z-50">
+          <button className="px-8 py-2 border border-[#08FFBD] rounded-2xl text-sm bg-transparent">
             Support
           </button>
-          <div className="bg-[#05FF69] h-1 w-10">&nbsp;</div>
-          <div className="h-8 w-8 bg-[#05FF69] rounded-full flex items-center justify-center ">
+          <div className="bg-[#08FFBD] h-1 w-10">&nbsp;</div>
+          <div className="h-8 w-8 bg-[#08FFBD] rounded-full flex items-center justify-center ">
             <SvgIcon iconName="message" />
           </div>
         </div>

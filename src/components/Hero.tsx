@@ -17,20 +17,22 @@ const Hero = () => {
       <div className=" text-white w-screen">
         <Nav />
         <div className="header">
-          <div className="grid grid-cols-12 items-start mt-8 lg:mt-0 lg:content-center min-h-[90vh]">
+          <div className="grid grid-cols-12 items-start mt-8 lg:mt-0 lg:content-center min-h-[90vh] max-md:min-h-[75vh]">
             <div className="col-span-12 lg:col-span-6 max-md:mx-8 lg:self-center z-50">
-              <p className="text-6xl max-md:text-xl lg:text-left mt-10 2xl:mt-60 ">
+              <p className="text-7xl font-medium max-md:text-4xl lg:text-left mt-10 2xl:mt-60 ">
                 Accept <br className="hidden lg:block" />
                 <span className="font-semibold text-gradient">Contactless</span>
                 <br className="hidden lg:block" />{" "}
-                <span className="font-semibold text-gradient">payment</span> on{" "}
-                <br className="hidden lg:block" />
+                <span className="font-semibold text-gradient-2">payment</span>{" "}
+                on <br className="hidden lg:block" />
                 NFC-enabled <br className="hidden lg:block" />
                 devices.
               </p>
-              <div className="flex mt-8 items-center">
-                <SvgIcon iconName="groupIcon" />
-                <p className="text-xs ml-4 ">
+              <div className="flex mt-8 items-center max-sm:flex-wrap">
+                <div className="mr-4" >
+                  <SvgIcon iconName="groupIcon" />
+                </div>
+                <p className="text-base text-[#F5F5F7] max-sm:mt-4">
                   Accept contactless payments from your customers’ <br />
                   bank cards, All banks supported.
                 </p>
