@@ -15,9 +15,9 @@ const Nav = () => {
           <li className="text-[#F5F5F7] text-base max-md:text-sm font-light">FAQs</li>
         </ul> */}
         <div className="ml-auto flex items-center order-3 z-50">
-          <button className="px-8 py-2 border border-[#08FFBD] rounded-2xl text-sm bg-transparent">
+          <a href="mailto:sales@tapready.africa" className="px-8 py-2 border border-[#08FFBD] rounded-2xl text-sm bg-transparent">
             Support
-          </button>
+          </a>
           <div className="bg-[#08FFBD] h-1 w-10">&nbsp;</div>
           <div className="h-8 w-8 bg-[#08FFBD] rounded-full flex items-center justify-center ">
             <SvgIcon iconName="message" />

@@ -17,9 +17,9 @@ const Hero = () => {
       <div className=" text-white w-screen">
         <Nav />
         <div className="header">
-          <div className="grid grid-cols-12 items-start mt-8 lg:mt-0 lg:content-center min-h-[90vh] max-md:min-h-[75vh]">
+          <div className="grid grid-cols-12 items-start mt-8 lg:mt-0 lg:content-center min-h-[90vh] max-sm:min-h-[70vh]">
             <div className="col-span-12 lg:col-span-6 max-md:mx-8 lg:self-center z-50">
-              <p className="text-7xl font-medium max-md:text-4xl lg:text-left mt-10 2xl:mt-60 ">
+              <p className="text-7xl font-medium max-md:text-5xl lg:text-left mt-10 2xl:mt-60 ">
                 Accept <br className="hidden lg:block" />
                 <span className="font-semibold text-gradient">Contactless</span>
                 <br className="hidden lg:block" />{" "}
