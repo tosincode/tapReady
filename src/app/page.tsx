@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import PaymentsFeatures from "@/components/PaymentsFeatures";
 import ProductSummary from "@/components/ProductSummary";
+import 'globalthis/polyfill';
 
 export const metadata = {
   title: `TapReady`,
